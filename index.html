@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL PERREO | The Festival 2026</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat para un look urbano y moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #050505;
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(236, 72, 153, 0.8), 0 0 20px rgba(236, 72, 153, 0.5);
+        }
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(5,5,5,1) 100%);
+        }
+        .artist-card:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full z-50 bg-glass py-4 px-6 flex justify-between items-center transition-all duration-300">
+        <div class="text-2xl font-black tracking-tighter italic">
+            LA BATALLA <span class="text-fuchsia-500">DEL FLOW</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-widest">
+            <a href="#inicio" class="hover:text-fuchsia-500 transition">Inicio</a>
+            <a href="#lineup" class="hover:text-fuchsia-500 transition">Lineup</a>
+            <a href="#entradas" class="hover:text-fuchsia-500 transition">Entradas</a>
+            <a href="#ubicacion" class="hover:text-fuchsia-500 transition">Ubicación</a>
+            <a href="#info" class="hover:text-fuchsia-500 transition">Info</a>
+        </div>
+        <a href="#entradas" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-black hover:bg-white transition uppercase text-sm">
+            Comprar Tickets
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Mockup Image -->
+        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2070&auto=format&fit=crop" 
+             alt="Fondo concierto" 
+             class="absolute inset-0 w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <div class="relative z-10 text-center px-4">
+            <p class="text-fuchsia-500 font-bold tracking-[0.5em] uppercase mb-4 animate-bounce">El festival más grande del año</p>
+            <h1 class="text-6xl md:text-9xl font-black italic uppercase tracking-tighter mb-6 leading-none">
+                LA BATALLA <br> <span class=" border-2 border-white px-4 -skew-x-12 inline-block mt-2">DEL FLOW</span>
+            </h1>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-8">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="calendar" class="text-yellow-400"></i>
+                    <span class="font-bold">15 DE OCTUBRE, 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="map-pin" class="text-yellow-400"></i>
+                    <span class="font-bold">JESUS MARIA, PERÚ - CLUB LAWN TENIS</span>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="https://www.teleticket.com.pe" target="_blank" 
+                   class="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-5 rounded-full text-xl font-black uppercase tracking-widest transition transform hover:scale-105 shadow-2xl inline-flex items-center gap-3">
+                   Comprar Entradas
+                   <i data-lucide="ticket"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Lineup Section -->
+    <section id="lineup" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="mb-16">
+            <h2 class="text-5xl font-black italic uppercase mb-4">Lineup <span class="text-fuchsia-500">Oficial</span></h2>
+            <div class="h-1 w-32 bg-yellow-400"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Artist 1 -->
+            <div class="group relative overflow-hidden rounded-3xl artist-card">
+                <img src="https://photos.bandsintown.com/thumb/6304412.jpeg" 
+                     alt="Headliner" 
+                     class="w-full h-[500px] object-cover transition duration-500 grayscale group-hover:grayscale-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-8">
+                    <p class="text-yellow-400 font-bold uppercase tracking-widest mb-2">Headliner</p>
+                    <h3 class="text-4xl font-black uppercase italic">DON CHEZINA</h3>
+                </div>
+            </div>
+            <!-- Artist 2 -->
+            <div class="group relative overflow-hidden rounded-3xl artist-card">
+                <img src="https://yt3.googleusercontent.com/o8LNZ9aZDG2XsBD-6iZTYs4TW79cuPeqRaTiOuRK1HrtXTNZCTxv9ZIUJ6w2xByR2mzskY4c32w=s900-c-k-c0x00ffffff-no-rj" 
+                     alt="Artist" 
+                     class="w-full h-[500px] object-cover transition duration-500 grayscale group-hover:grayscale-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-8">
+                    <p class="text-fuchsia-500 font-bold uppercase tracking-widest mb-2">Special Guest</p>
+                    <h3 class="text-4xl font-black uppercase italic">DJ NELSON</h3>
+                </div>
+            </div>
+            <!-- Artist 3 -->
+            <div class="group relative overflow-hidden rounded-3xl artist-card">
+                <img src="https://viberate-upload.ams3.cdn.digitaloceanspaces.com/prod/entity/artist/yomo-A4SOW" 
+                     alt="Artist" 
+                     class="w-full h-[500px] object-cover transition duration-500 grayscale group-hover:grayscale-0">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-0 p-8">
+                    <p class="text-yellow-400 font-bold uppercase tracking-widest mb-2">Urban Icon</p>
+                    <h3 class="text-4xl font-black uppercase italic">YOMO</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="entradas" class="py-24 bg-zinc-900 px-6">
+        <div class="max-w-5xl mx-auto text-center mb-16">
+            <h2 class="text-5xl font-black uppercase italic mb-6">Asegura tu <span class="text-yellow-400">Lugar</span></h2>
+            <p class="text-zinc-400">No te quedes fuera del evento que marcará la historia del reguetón en el país. Elige tu zona.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Box General -->
+            <div class="bg-glass p-8 rounded-3xl flex flex-col items-center text-center border-b-4 border-white">
+                <h4 class="text-xl font-bold mb-4 uppercase">General</h4>
+                <div class="text-5xl font-black mb-6">S/ 120</div>
+                <ul class="space-y-3 mb-8 text-zinc-300">
+                    <li>Acceso zona B</li>
+                    <li>Barra de bebidas</li>
+                    <li>Zonas de comida</li>
+                </ul>
+                <a href="https://www.teleticket.com.pe" target="_blank" 
+                   class="w-full py-3 border-2 border-white rounded-full font-bold hover:bg-white hover:text-black transition uppercase">
+                   Seleccionar
+                </a>
+            </div>
+
+            <!-- Box VIP -->
+            <div class="bg-fuchsia-600 p-8 rounded-3xl flex flex-col items-center text-center transform scale-110 shadow-2xl relative z-10">
+                <div class="absolute -top-4 bg-yellow-400 text-black px-4 py-1 rounded-full text-xs font-black uppercase">Más vendido</div>
+                <h4 class="text-xl font-bold mb-4 uppercase">VIP Box</h4>
+                <div class="text-5xl font-black mb-6">S/ 250</div>
+                <ul class="space-y-3 mb-8">
+                    <li>Acceso zona A (Cerca al escenario)</li>
+                    <li>Ingreso preferencial</li>
+                    <li>Baños Premium</li>
+                    <li>Merchandising Oficial</li>
+                </ul>
+                <a href="https://www.teleticket.com.pe" target="_blank" 
+                   class="w-full py-3 bg-white text-black rounded-full font-bold hover:bg-black hover:text-white transition uppercase">
+                   Comprar Ahora
+                </a>
+            </div>
+
+            <!-- Box Ultra -->
+            <div class="bg-glass p-8 rounded-3xl flex flex-col items-center text-center border-b-4 border-yellow-400">
+                <h4 class="text-xl font-bold mb-4 uppercase">Ultra VIP</h4>
+                <div class="text-5xl font-black mb-6">S/ 480</div>
+                <ul class="space-y-3 mb-8 text-zinc-300">
+                    <li>Acceso Backstage</li>
+                    <li>Barra libre</li>
+                    <li>Estacionamiento privado</li>
+                    <li>Meet & Greet (Sorteo)</li>
+                </ul>
+                <a href="https://www.teleticket.com.pe" target="_blank" 
+                   class="w-full py-3 border-2 border-yellow-400 text-yellow-400 rounded-full font-bold hover:bg-yellow-400 hover:text-black transition uppercase">
+                   Seleccionar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section (NEW) -->
+    <section id="ubicacion" class="py-24 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-5xl font-black italic uppercase mb-4">¿Cómo <span class="text-fuchsia-500">Llegar?</span></h2>
+                <div class="h-1 w-32 bg-yellow-400"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <!-- Map Container -->
+                <div class="lg:col-span-2 rounded-3xl overflow-hidden border-2 border-zinc-800 shadow-2xl h-[450px]">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7803.3361758580395!2d-77.04083302577617!3d-12.06634284226387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8ebcea21341%3A0xd4b28f6f91504f26!2sClub%20Lawn%20Tennis!5e0!3m2!1ses!2ses!4v1766251717005!5m2!1ses!2ses" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; filter: grayscale(1) invert(0.9) contrast(1.2);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    
+                </div>
+
+                <!-- Info Cards -->
+                <div class="space-y-6">
+                    <div class="bg-glass p-6 rounded-2xl border-l-4 border-fuchsia-600">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="map-pin" class="text-fuchsia-500"></i>
+                            <h4 class="font-bold uppercase tracking-wider text-white">Dirección</h4>
+                        </div>
+                        <p class="text-zinc-400">Club Lawn Tenis, Jesus María.</p>
+                    </div>
+
+                    <div class="bg-glass p-6 rounded-2xl border-l-4 border-yellow-400">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="bus" class="text-yellow-400"></i>
+                            <h4 class="font-bold uppercase tracking-wider text-white">Transporte Público</h4>
+                        </div>
+                        <p class="text-zinc-400 text-sm">Contaremos con buses "Flow Express" saliendo desde las estaciones del Metropolitano (Estación Central y Matellini).</p>
+                    </div>
+
+                    <div class="bg-glass p-6 rounded-2xl border-l-4 border-white">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="car" class="text-white"></i>
+                            <h4 class="font-bold uppercase tracking-wider text-white">Estacionamiento</h4>
+                        </div>
+                        <p class="text-zinc-400 text-sm">Disponibilidad limitada. Te recomendamos usar apps de transporte para mayor comodidad.</p>
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/Q82G9pZnvUxcEs887" target="_blank" class="w-full flex items-center justify-center gap-3 bg-zinc-800 hover:bg-zinc-700 py-4 rounded-full font-bold transition">
+                        <i data-lucide="navigation"></i>
+                        ABRIR EN GOOGLE MAPS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee / Texto en movimiento -->
+    <div class="bg-yellow-400 py-4 overflow-hidden whitespace-nowrap border-y-2 border-black">
+        <div class="inline-block animate-marquee uppercase font-black text-2xl text-black">
+            SOLO PARA MAYORES DE 18 • BEBE CON MODERACIÓN • EL PERREO NO SE DETIENE • 15 DE OCTUBRE • CLUB LAWN TENIS • COMPRA TUS ENTRADAS YA • 
+            SOLO PARA MAYORES DE 18 • BEBE CON MODERACIÓN • EL PERREO NO SE DETIENE • 15 DE OCTUBRE • CLUB LAWN TENIS • COMPRA TUS ENTRADAS YA • 
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="info" class="bg-black pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-4xl font-black italic mb-6">
+                    LA BATALLA <span class="text-fuchsia-500">DEL FLOW</span>
+                </div>
+                <p class="text-zinc-500 max-w-sm mb-6">
+                    El festival que reúne a las leyendas y a la nueva sangre del género urbano en un solo lugar. Una experiencia sensorial de 12 horas de música ininterrumpida.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="bg-zinc-800 p-3 rounded-full hover:bg-fuchsia-500 transition"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="bg-zinc-800 p-3 rounded-full hover:bg-fuchsia-500 transition"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="bg-zinc-800 p-3 rounded-full hover:bg-fuchsia-500 transition"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase mb-6 text-yellow-400">Explorar</h5>
+                <ul class="space-y-4 text-zinc-400">
+                    <li><a href="#lineup" class="hover:text-white transition">Lineup</a></li>
+                    <li><a href="#entradas" class="hover:text-white transition">Entradas</a></li>
+                    <li><a href="#ubicacion" class="hover:text-white transition">Ubicación</a></li>
+                    <li><a href="#" class="hover:text-white transition">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold uppercase mb-6 text-yellow-400">Contacto</h5>
+                <ul class="space-y-4 text-zinc-400">
+                    <li class="flex items-center gap-2"><i data-lucide="mail" size="18"></i> info@labatalladelflow.com</li>
+                    <li class="flex items-center gap-2"><i data-lucide="phone" size="18"></i> +51 987 654 321</li>
+                    <li class="flex items-center gap-2"><i data-lucide="help-circle" size="18"></i> Preguntas frecuentes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-zinc-800 pt-10 text-center text-zinc-600 text-sm">
+            <p>&copy; 2026 LA BATALLA DEL FLOW . Todos los derechos reservados. Diseñado para amantes del género.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar iconos
+        lucide.createIcons();
+
+        // Animación simple de Marquee con CSS
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes marquee {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-marquee {
+                display: inline-block;
+                animation: marquee 20s linear infinite;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Efecto de scroll para el header
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-black/90', 'shadow-xl', 'py-2');
+                nav.classList.remove('bg-glass', 'py-4');
+            } else {
+                nav.classList.add('bg-glass', 'py-4');
+                nav.classList.remove('bg-black/90', 'shadow-xl', 'py-2');
+            }
+        });
+    </script>
+</body>
+</html>
